@@ -1,0 +1,26 @@
+
+  <ion-card>
+    <ion-item class="ion-margin-vertical" lines="none">
+      <ion-icon slot="start" [name]="titleIcon"></ion-icon>
+      <ion-icon slot="end" [name]="rightIcon"></ion-icon>
+      <ion-label>{{ title }}</ion-label>
+    </ion-item>
+
+    <ion-card-content class="ion-no-padding">
+      <div class="cash ion-padding ion-margin-vertical">
+        <span class="blue">{{ titleContent }}</span>
+        <span class="blue values">{{ value }}</span>
+        <span
+          >{{ limitText }} <span class="green">{{ limit }}</span></span
+        >
+      </div>
+
+      <div class="footer ion-padding-vertical">
+        <ion-item color="light" lines="none" detail="true">
+          <ion-icon slot="start" [name]="footerIcon"></ion-icon>
+          <ion-label class="ion-text-wrap">{{ footer }}</ion-label>
+        </ion-item>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
