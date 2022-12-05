@@ -17,6 +17,8 @@ export class CardComponent implements OnInit {
   @Input() footer: string | undefined;
   @Input() footerIcon: string | undefined;
 
+  // Criar um Model (Interface) e passar apenas um @Input do tipo Object.
+
   constructor() { }
 
   ngOnInit() {}
