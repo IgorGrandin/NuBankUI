@@ -32,6 +32,9 @@
   <div #blocks class="blocks" [ngClass]="fixedBlocks() ? 'fixed' : null">
     <div *ngFor="let card of cards">
       <app-card
+      [card] = "card"
+      ></app-card>
+      <!-- <app-card
         [title]="card.title"
         [titleIcon]="card.titleIcon"
         [rightIcon]="card.rightIcon"
@@ -41,7 +44,7 @@
         [limit]="card.limit"
         [footer]="card.footer"
         [footerIcon]="card.footerIcon"
-      ></app-card>
+      ></app-card> -->
     </div>
     <ion-card>
       <ion-card-content class="ion-text-center">

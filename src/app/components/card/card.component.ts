@@ -1,3 +1,4 @@
+import { CardModel } from './../../models/cards.model';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -6,21 +7,19 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
+  @Input() card: CardModel | undefined;
 
-  @Input() title: string | undefined;
-  @Input() titleIcon: string | undefined;
-  @Input() rightIcon: string | undefined;
-  @Input() titleContent: string | undefined;
-  @Input() value: string | undefined;
-  @Input() limitText: string | undefined;
-  @Input() limit: string | undefined;
-  @Input() footer: string | undefined;
-  @Input() footerIcon: string | undefined;
+  // @Input() title: string | undefined;
+  // @Input() titleIcon: string | undefined;
+  // @Input() rightIcon: string | undefined;
+  // @Input() titleContent: string | undefined;
+  // @Input() value: string | undefined;
+  // @Input() limitText: string | undefined;
+  // @Input() limit: string | undefined;
+  // @Input() footer: string | undefined;
+  // @Input() footerIcon: string | undefined;
 
-  // Criar um Model (Interface) e passar apenas um @Input do tipo Object.
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
-
 }

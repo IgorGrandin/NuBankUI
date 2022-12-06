@@ -1,3 +1,4 @@
+import { CardModel } from './../models/cards.model';
 import { Component, Renderer2, ViewChild } from '@angular/core';
 import { AnimationController, Animation, Platform } from '@ionic/angular';
 
@@ -29,14 +30,14 @@ export class HomePage {
     { icon: 'phone-portrait-outline', text: 'Configurações do app' },
   ];
 
-  public cards: Array<any> = [
+  public cards: Array<CardModel> = [
     {
       title: 'Cartão de crédito',
       titleIcon: 'card-outline',
       rightIcon: '',
       titleContent: 'Fatura atual',
       value: 'R$325,50',
-      limiteText: 'Limite disponível:',
+      limitText: 'Limite disponível:',
       limit: 'R$4502,50',
       footer: 'Compra mais recente em ifood *Ifood no valor de R$54,00',
       footerIcon: 'pizza-outline',
@@ -47,7 +48,7 @@ export class HomePage {
       rightIcon: 'eye-off-outline',
       titleContent: 'Saldo disponível',
       value: 'R$1530,45',
-      limiteText: '',
+      limitText: '',
       limit: '',
       footer: 'Boleto de R$455,30 pago na segunda',
       footerIcon: 'barcode-outline',
